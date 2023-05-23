@@ -20,11 +20,21 @@ padding-left: 10px;
 
 }
 
-.Conteiner button {
+ button {
   width: 300px;
   height: 50px;
   margin-top: 15px;
 }
-.Conteiner button:hover{
+ button:hover{
   cursor: pointer;
+}
+
+
+.Pessoas{
+  display: flex;
+  align-items: center;
+ justify-content: center;
+ flex-direction: column;
+  width: 100%;
+
 }
