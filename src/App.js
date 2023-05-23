@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from "react"; 
+import Axios from 'axios';
 
 function App() {
 
@@ -10,6 +11,14 @@ function App() {
     console.log(Name, age)
   }
 
+  const addPessoa = () =>{
+    Axios.post('http://localhost:3001/create', {
+      name: Name, 
+      age: age
+    }).then(() => {
+    console.log("succeess");
+  });
+  };
 
   return <div className="App">
     <div className='Conteiner'>
@@ -25,7 +34,7 @@ function App() {
       setAge(event.target.value);
       }}
       />
-    <button onClick={displayInfo}>Enviar</button>
+    <button onClick={addPessoa}>Enviar</button>
   </div>
   </div>
 
