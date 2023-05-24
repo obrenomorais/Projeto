@@ -33,8 +33,33 @@ padding-left: 10px;
 .Pessoas{
   display: flex;
   align-items: center;
- justify-content: center;
- flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
+
+
+}
+
+.pessoa{
+  margin-top: 10px;
+  width: 500px;
+  height: 200px;
+  border: 1px solid black;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+
+.quadrado{
+  justify-content: center;
+  display: grid;
+  align-items: center;
+}
+
+.botaoteste{
+  justify-content: center;
 
 }
